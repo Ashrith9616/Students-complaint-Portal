@@ -6,8 +6,8 @@ import AdminDashboard from './AdminDashboard';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter basename='Students-complaint-Portal' >
+      <Routes   >
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
